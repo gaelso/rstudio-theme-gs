@@ -12,7 +12,10 @@
   background: #e8e8e8;
 }
 
-.ace_editor, .rstudio-themes-flat.ace_editor_theme .profvis-flamegraph, .rstudio-themes-flat.ace_editor_theme, .rstudio-themes-flat .ace_editor_theme {
+.ace_editor, 
+.rstudio-themes-flat.ace_editor_theme .profvis-flamegraph, 
+.rstudio-themes-flat.ace_editor_theme, 
+.rstudio-themes-flat .ace_editor_theme {
   background-color: #161616;
   color: #AEDDE3;
 }
@@ -63,13 +66,11 @@
 
 .ace_keyword {
   color: #E63B19;
-
 }
 
 .ace_keyword.ace_operator {
   font-weight: bold;
   color: #44DB44;
-
 }
 
 .ace_constant.ace_language {
@@ -85,12 +86,10 @@
 
 .ace_support.ace_function {
   color: #EBEB59;
-
 }
 
 .ace_support.ace_type {
   color: #AEDDE3;
-
 }
 
 .ace_string {
@@ -106,34 +105,51 @@
 
 .ace_variable {
   color: #AEDDE3;
-
 }
+
+
+
+/* ADDING INDENT LINE */
+.ace_indent-guide {
+  box-shadow: 1px 0 0 0 #404040;
+  display: inline-block;
+}
+/*  */
+
+
+
 .nocolor.ace_editor .ace_line span {
   color: #e63b19 !important;
 }
+
 .ace_bracket {
   margin: 0 !important;
   border: 0 !important;
   background-color: rgba(128, 128, 128, 0.5);
 }
+
 .ace_marker-layer .ace_foreign_line {
   position: absolute;
   z-index: -1;
   background-color: #262A2B;
 }
+
 .ace_marker-layer .ace_active_debug_line {
   position: absolute;
   z-index: -1;
   background-color: #8B7A27;
 }
+
 .ace_marker-layer .ace_find_line {
   position: absolute;
   z-index: -1;
   background-color: #353E3F;
 }
+
 .ace_console_error {
   background-color: #353E3F;
 }
+
 .terminal {
   background-color: #161616;
   color: #aedde3;
@@ -143,28 +159,34 @@
   -ms-user-select: none;
   -webkit-user-select: none;
 }
+
 .terminal.xterm-cursor-style-block.focus:not(.xterm-cursor-blink-on) .terminal-cursor {
   background-color: #CCC;
   color: #1e1e1e;
 }
+
 .terminal.focus.xterm-cursor-style-bar:not(.xterm-cursor-blink-on) .terminal-cursor::before,
 .terminal.focus.xterm-cursor-style-underline:not(.xterm-cursor-blink-on) .terminal-cursor::before {
   content: '';
   position: absolute;
   background-color: #CCC;
 }
+
 .terminal:not(.focus) .terminal-cursor {
   outline: 1px solid #CCC;
   outline-offset: -1px;
 }
+
 .terminal .xterm-selection div {
    position: absolute;
    background-color: #CCC;
 }
+
 .terminal .xterm-viewport {
   background-color: #161616;
   overflow-y: scroll;
 }
+
 .xtermInvertColor { color: #161616; }
 .xtermInvertBgColor { background-color: #aedde3; }
 .xtermBold { font-weight: bold; }
@@ -700,6 +722,7 @@
 .ace_layer.ace_marker-layer {
    z-index: 1;
 }
+
 .rstudio-themes-flat.rstudio-themes-dark-menus .ace_editor.ace_autocomplete {
    background: #2f3941;
    border: solid 1px #4e5c68 !important;
